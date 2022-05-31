@@ -136,7 +136,7 @@ ul {
 
 ul li  {
     /* background-color: rgb(209, 240, 174);*/
-    margin: 25px;
+    margin: 20px;
     border-radius: 6px;
     padding: 10px;
     position: relative;
@@ -182,9 +182,6 @@ ul li a {
 
 ul li a:hover {
     /*color: rgb(189, 45, 202);*/
-    background-color: violet;
-    border-radius: 10px;
-    padding: 0.2rem;
 }
 
 .logo2 {
@@ -194,7 +191,8 @@ ul li a:hover {
 
 .logo #corazon {
     width: 25%;
-    height: auto;
+    height: auto; 
+    margin: auto;
 }
 
 @media screen and (max-width: 768px) {

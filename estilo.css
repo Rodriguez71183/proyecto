@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(114, 145, 114, 0.8), rgba(112, 73, 112, 0.8)), url(https://th.bing.com/th/id/R.8196173cd7f4300855ec7f7f69b14e0a?rik=pBUwMyF35InX0A&riu=http%3a%2f%2fletrasdecolores.com%2fwp-content%2fuploads%2f2013%2f10%2fslideinfant-1024x397.jpg&ehk=cjLnsu%2fh0qy6%2bMeclE4rFEbRuWGfwKzXoczQP5I%2fLGU%3d&risl=&pid=ImgRaw&r=0);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*header*/
+.titulo h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px rgb(3, 3, 3);
+    font-size: 4rem;
+    color: white;
+    font-family: 'Blaka', cursive;
+}
+
+
+.container {
+    /*background-color: rgb(106, 163, 228);*/
+    width: 93%;
+    margin: 1.2em auto;
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+/*.container>.header,*/
+.container>.caja,
+.container>.sidebar,
+/*.container>.footer,*/
+.container>.div {
+   /* background-color: rgb(165, 241, 241);*/
+    padding: 20px;
+    border: 5px solid rgba(231, 176, 236, 0.8);
+    margin-top: 30px;
+    border-radius: 15px;
+    
+
+}
+
+.container .footer,
+.container .header {
+    /*background-color: rgb(98, 146, 146);*/
+    color: white;
+    grid-column: 1/5;
+    margin: 40px 0;
+}
+
+
+.container .caja {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.container .caja2 {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .sidebar {
+    grid-column: span 1;
+}
+
+.article {
+    border: 1px solid red;
+    margin: 10px;
+    padding: 1rem;
+    background-color: rgb(243, 212, 238);
+    border-radius: 15px;
+}
+
+.article2 {
+    border: 3px solid red;
+    margin: 10 px auto;
+    padding: 1rem;
+    background-color: rgb(243, 212, 238);
+    border-radius: 15px;
+
+}
+
+.article h1 {
+    text-align: center;
+}
+
+.article2 h1 {
+    text-align: center;
+}
+
+.article p {
+    margin-top: 2rem;
+    word-spacing: 4px;
+    line-height: 2rem;
+}
+
+.article2 .p2 {
+    margin-top: 2rem;
+    word-spacing: 4px;
+    line-height: 2rem;
+
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+    height: 15vh;
+}
+
+.logo {
+    width: 300px auto;
+}
+
+.logo img {
+    width: 300px auto;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul li  {
+    /* background-color: rgb(209, 240, 174);*/
+    margin: 25px;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+
+}
+
+    ul li ::before {
+    /* background-color: rgb(209, 240, 174);*/
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: rgba(238, 241, 9, 0.925);
+    padding: o.5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.2s ease-out;
+}
+
+    ul li:hover ::before{
+    width: 100%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(253, 247, 247);
+    font-size: 1.5rem;
+    text-shadow: 3px 2px 4px rgb(17, 17, 16);
+}
+.foto {
+    border: 1px solid red;
+    margin: 10PX;
+    padding: 10PX;
+}
+
+.container .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+ul li a:hover {
+    /*color: rgb(189, 45, 202);*/
+    background-color: violet;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+
+.logo2 {
+    width: 100%;
+    height: auto;
+}
+
+.logo #corazon {
+    width: 25%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container .header {
+        text-align: center;
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .container .caja {
+        grid-column: 1/-1;
+        display: block;
+        margin-top: auto;
+    }
+
+    .container .sidebar {
+        grid-column: 1/-1;
+    }
+
+    .container .footer {
+        align-items: center;
+        display: block;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    ul li {
+        display: flex;
+        flex-direction: column;
+        
+
+
+    }
+
+    ul li a {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    ul li:hover {
+        background-color: violet;
+        border-radius: 10px;
+    }
+
+    ul li a:hover {
+        color: white;
+        
+    }
+
+}
